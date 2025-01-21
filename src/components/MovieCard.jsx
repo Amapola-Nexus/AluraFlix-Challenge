@@ -4,6 +4,7 @@ import { MdModeEdit } from "react-icons/md";
 import { FaRegStar } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { useFavContext } from "../Contexts/Favorites";
+import favImage from "../assets/Fav.svg";
 import { useContext, useRef, useState } from "react";
 import FormModal from "./FormModal";
 import InputTextField from "./InputTextField";
@@ -257,7 +258,7 @@ function MovieCard({id, title, genre, posterURL, landscapeURL, trailerURL, descr
     <CardStyles>
         <img
         className={`icon ${isFav && 'displayed'} ${btnIsClicked && 'btnWasClicked'}`} 
-        src="src/assets/Fav.svg"
+        src={favImage}
         />
         <CollapsibleStyles aria-expanded={!isCollapsed}>
             <li
