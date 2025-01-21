@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
 function Header() {
     return (
         <StyledHeader>
-            <img src="../assets/Logo.svg"/>
+            <img src="../src/assets/Logo.svg""/>
         </StyledHeader>
     )
 };
