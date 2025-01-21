@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import logo from "../assets/Logo.svg"
 
 const StyledHeader = styled.header`
     display: flex;
@@ -16,7 +17,7 @@ const StyledHeader = styled.header`
 function Header() {
     return (
         <StyledHeader>
-            <img src="../src/assets/Logo.svg"/>
+            <img src={logo} alt="Logo de AluraFlix"/>
         </StyledHeader>
     )
 };
